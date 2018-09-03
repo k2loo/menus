@@ -1,17 +1,23 @@
 :root{
   font-size: 16px;
+  --primary-color-100:rgba(0,0,0,1);
+  --primary-color-80:rgba(0,0,0,0.8);
+  --primary-color-60:rgba(0,0,0,0.6);
+  --primary-color-40:rgba(0,0,0,0.4);
+  --primary-color-20:rgba(0,0,0,0.2);
+  --primary-color-10:rgba(0,0,0,0.1);
 }
 
 body{
   font-family: 'Fira Sans', sans-serif;
 }
 
-#main_nav_wrap
+#main-nav
 {
 	margin-top:15px
 }
 
-#main_nav_wrap ul
+#main-nav ul
 {
 	list-style:none;
 	position:relative;
@@ -20,10 +26,10 @@ body{
 	padding:0
 }
 
-#main_nav_wrap ul a
+#main-nav ul a
 {
 	display:block;
-	color:#333;
+	color: var(--primary-color-80);
 	text-decoration:none;
 	font-weight:700;
 	font-size:12px;
@@ -32,7 +38,7 @@ body{
 	font-family:Arial, Helvetica, sans-serif;
 }
 
-#main_nav_wrap ul li
+#main-nav ul li
 {
 	position:relative;
 	float:left;
@@ -40,17 +46,17 @@ body{
 	padding:0
 }
 
-#main_nav_wrap ul li.current-menu-item
+#main-nav ul li.current-menu-item
 {
-	background:#ddd
+	background: var(--primary-color-20);
 }
 
-#main_nav_wrap ul li:hover
+#main-nav ul li:hover
 {
-	background:#f6f6f6
+	background:var(--primary-color-10);
 }
 
-#main_nav_wrap ul ul
+#main-nav ul ul
 {
 	display:none;
 	position:absolute;
@@ -60,25 +66,25 @@ body{
 	padding:0
 }
 
-#main_nav_wrap ul ul li
+#main-nav ul ul li
 {
 	float:none;
 	width:200px
 }
 
-#main_nav_wrap ul ul a
+#main-nav ul ul a
 {
 	line-height:120%;
 	padding:10px 15px
 }
 
-#main_nav_wrap ul ul ul
+#main-nav ul ul ul
 {
 	top:0;
 	left:100%
 }
 
-#main_nav_wrap ul li:hover > ul
+#main-nav ul li:hover > ul
 {
 	display:block
 }
