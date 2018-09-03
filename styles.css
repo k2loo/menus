@@ -1,0 +1,16 @@
+body{
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.menu ul{
+  margin:0px;
+  padding:0px;
+  list-style:none;
+  color:white;
+}
+
+.menu ul li{
+  float:left;
+  width:200px;
+  height:50px;
+}
